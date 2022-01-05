@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="powernukkit-1.5.1.0-PN-shaded">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../Nukkit Jar-Datein/powernukkit-1.5.1.0-PN-shaded.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
