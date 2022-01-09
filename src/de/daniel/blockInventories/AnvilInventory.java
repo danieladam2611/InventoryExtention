@@ -20,6 +20,8 @@ import java.util.logging.Logger;
 
 public class AnvilInventory extends FakeInventory {
 
+    private String name;
+
     public AnvilInventory() {
         this(null);
     }
@@ -53,5 +55,13 @@ public class AnvilInventory extends FakeInventory {
         } catch (IOException e) {
             throw new RuntimeException("Unable to create NBT");
         }
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }

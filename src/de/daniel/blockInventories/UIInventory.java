@@ -19,6 +19,8 @@ import java.util.List;
 
 public class UIInventory extends FakeInventory {
 
+    private String name;
+
     public UIInventory() {
         this(null);
     }
@@ -49,5 +51,13 @@ public class UIInventory extends FakeInventory {
         } catch (IOException e) {
             throw new RuntimeException("Unable to create NBT");
         }
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }

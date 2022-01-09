@@ -19,6 +19,8 @@ import java.util.List;
 
 public class DropperInventory extends FakeInventory {
 
+    private String name;
+
     public DropperInventory() {
         this(null);
     }
@@ -52,5 +54,13 @@ public class DropperInventory extends FakeInventory {
         } catch (IOException e) {
             throw new RuntimeException("Unable to create NBT");
         }
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }
